@@ -325,6 +325,7 @@ export class Task {
             newStatus = Status.makeCancelled();
         }
         const newTasks = this.handleNewStatus(newStatus);
+        
         logEndOfTaskEdit(logger, codeLocation, newTasks);
         return newTasks;
     }
